@@ -1,0 +1,25 @@
+
+
+ Pin # | Name     | Pin Type
+-----------------------------
+   1   | AS       | Input
+   2   | FC1      | Input
+   3   | FC0      | Input
+   4   | ABORT    | Input
+   5   | A1       | Input
+   6   | A2       | Input
+   7   | A3       | Input
+   8   | AIRQ     | Input
+   9   | PIRQ     | Input
+  10   | GND      | GND
+  11   | TIRQ     | Input
+  12   | VPA      | Output
+  13   | IL       | Output
+  14   | TIACK    | Output
+  15   | PIACK    | Output
+  16   | AIACK    | Output
+  17   | IPL1     | Output
+  18   | FC2      | Input
+  19   | IPL2     | Output
+  20   | VCC      | VCC
+
