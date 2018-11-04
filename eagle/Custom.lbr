@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2778,8 +2778,6 @@ shrink quad flat pack, square</description>
 <pin name="CDIS" x="17.78" y="43.18" length="middle" direction="in" function="dot" rot="R180"/>
 <pin name="MDIS" x="17.78" y="40.64" length="middle" direction="in" function="dot" rot="R180"/>
 <pin name="TBI" x="-17.78" y="10.16" length="middle" direction="in" function="dot"/>
-<pin name="DLE" x="-17.78" y="7.62" length="middle" direction="in"/>
-<pin name="PCLK" x="-17.78" y="71.12" length="middle" direction="in" function="clk"/>
 <pin name="PST3" x="17.78" y="68.58" length="middle" direction="out" rot="R180"/>
 <pin name="BB" x="17.78" y="48.26" length="middle" function="dot" rot="R180"/>
 <pin name="RSTI" x="17.78" y="38.1" length="middle" direction="in" function="dot" rot="R180"/>
@@ -2788,15 +2786,18 @@ shrink quad flat pack, square</description>
 <pin name="TMS" x="17.78" y="10.16" length="middle" direction="in" rot="R180"/>
 <pin name="TDI" x="17.78" y="7.62" length="middle" direction="in" rot="R180"/>
 <pin name="TDO" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="TRST" x="17.78" y="2.54" length="middle" direction="in" function="dot" rot="R180"/>
 <pin name="TM0" x="-17.78" y="60.96" length="middle" direction="out"/>
 <pin name="TM1" x="-17.78" y="58.42" length="middle" direction="out"/>
 <pin name="TM2" x="-17.78" y="55.88" length="middle" direction="out"/>
+<pin name="JS0" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="JS2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SCD" x="-17.78" y="0" length="middle"/>
+<pin name="LOC" x="-17.78" y="2.54" length="middle"/>
+<pin name="LFO" x="-17.78" y="5.08" length="middle"/>
 </symbol>
 <symbol name="27PW39GN">
 <text x="-1.27" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
 <text x="50.165" y="-7.62" size="1.27" layer="95" rot="R90">GND</text>
-<text x="34.925" y="4.445" size="1.27" layer="95" rot="R90">VCC</text>
 <pin name="GND@1" x="-48.26" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@2" x="-45.72" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@3" x="-43.18" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
@@ -2810,15 +2811,15 @@ shrink quad flat pack, square</description>
 <pin name="GND@11" x="-22.86" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@12" x="-20.32" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@13" x="-17.78" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-<pin name="VCC@1" x="-33.02" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@2" x="-30.48" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@3" x="-27.94" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@4" x="-25.4" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@5" x="-22.86" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@6" x="-20.32" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@7" x="-17.78" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@8" x="-15.24" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@9" x="-12.7" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@1" x="-33.02" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@2" x="-30.48" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@3" x="-27.94" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@4" x="-25.4" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@5" x="-22.86" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@6" x="-20.32" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@7" x="-17.78" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@8" x="-15.24" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@9" x="-12.7" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 <pin name="GND@14" x="-15.24" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@15" x="-12.7" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@16" x="-10.16" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
@@ -2845,24 +2846,28 @@ shrink quad flat pack, square</description>
 <pin name="GND@37" x="43.18" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@38" x="45.72" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND@39" x="48.26" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
-<pin name="VCC@10" x="-10.16" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@11" x="-7.62" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@12" x="-5.08" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@13" x="-2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@14" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@15" x="2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@16" x="5.08" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@17" x="7.62" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@18" x="10.16" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@19" x="12.7" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@20" x="15.24" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@21" x="17.78" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@22" x="20.32" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@23" x="22.86" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@24" x="25.4" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@25" x="27.94" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@26" x="30.48" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@27" x="33.02" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@10" x="-10.16" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@11" x="-7.62" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@12" x="-5.08" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@13" x="-2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3C@14" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@15" x="2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@16" x="5.08" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@17" x="7.62" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@18" x="10.16" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@19" x="12.7" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@20" x="15.24" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@21" x="17.78" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@22" x="20.32" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@23" x="22.86" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@24" x="25.4" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@25" x="27.94" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@26" x="30.48" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@27" x="33.02" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@28" x="35.56" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@29" x="38.1" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="+3V3@30" x="40.64" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND@40" x="50.8" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3107,201 +3112,27 @@ shrink quad flat pack, square</description>
 <gate name="P" symbol="27PW39GN" x="5.08" y="-111.76" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="MPGA179">
-<connects>
-<connect gate="G$1" pin="A0" pad="L18"/>
-<connect gate="G$1" pin="A1" pad="K18"/>
-<connect gate="G$1" pin="A10" pad="P01"/>
-<connect gate="G$1" pin="A11" pad="N03"/>
-<connect gate="G$1" pin="A12" pad="N01"/>
-<connect gate="G$1" pin="A13" pad="M01"/>
-<connect gate="G$1" pin="A14" pad="L01"/>
-<connect gate="G$1" pin="A15" pad="K01"/>
-<connect gate="G$1" pin="A16" pad="K02"/>
-<connect gate="G$1" pin="A17" pad="J01"/>
-<connect gate="G$1" pin="A18" pad="H01"/>
-<connect gate="G$1" pin="A19" pad="J02"/>
-<connect gate="G$1" pin="A2" pad="J17"/>
-<connect gate="G$1" pin="A20" pad="G01"/>
-<connect gate="G$1" pin="A21" pad="F01"/>
-<connect gate="G$1" pin="A22" pad="E01"/>
-<connect gate="G$1" pin="A23" pad="G03"/>
-<connect gate="G$1" pin="A24" pad="D01"/>
-<connect gate="G$1" pin="A25" pad="F03"/>
-<connect gate="G$1" pin="A26" pad="E02"/>
-<connect gate="G$1" pin="A27" pad="C01"/>
-<connect gate="G$1" pin="A28" pad="E03"/>
-<connect gate="G$1" pin="A29" pad="B01"/>
-<connect gate="G$1" pin="A3" pad="J18"/>
-<connect gate="G$1" pin="A30" pad="D03"/>
-<connect gate="G$1" pin="A31" pad="A01"/>
-<connect gate="G$1" pin="A4" pad="H18"/>
-<connect gate="G$1" pin="A5" pad="G18"/>
-<connect gate="G$1" pin="A6" pad="G16"/>
-<connect gate="G$1" pin="A7" pad="F18"/>
-<connect gate="G$1" pin="A8" pad="E18"/>
-<connect gate="G$1" pin="A9" pad="F16"/>
-<connect gate="G$1" pin="AVEC" pad="T11"/>
-<connect gate="G$1" pin="BB" pad="T17"/>
-<connect gate="G$1" pin="BCLK" pad="R07"/>
-<connect gate="G$1" pin="BG" pad="T13"/>
-<connect gate="G$1" pin="BR" pad="T18"/>
-<connect gate="G$1" pin="CDIS" pad="T05"/>
-<connect gate="G$1" pin="CIOUT" pad="R01"/>
-<connect gate="G$1" pin="D0" pad="C03"/>
-<connect gate="G$1" pin="D1" pad="B03"/>
-<connect gate="G$1" pin="D10" pad="A08"/>
-<connect gate="G$1" pin="D11" pad="A09"/>
-<connect gate="G$1" pin="D12" pad="A10"/>
-<connect gate="G$1" pin="D13" pad="A11"/>
-<connect gate="G$1" pin="D14" pad="A12"/>
-<connect gate="G$1" pin="D15" pad="A13"/>
-<connect gate="G$1" pin="D16" pad="B11"/>
-<connect gate="G$1" pin="D17" pad="A14"/>
-<connect gate="G$1" pin="D18" pad="B12"/>
-<connect gate="G$1" pin="D19" pad="A15"/>
-<connect gate="G$1" pin="D2" pad="C04"/>
-<connect gate="G$1" pin="D20" pad="A16"/>
-<connect gate="G$1" pin="D21" pad="A17"/>
-<connect gate="G$1" pin="D22" pad="B16"/>
-<connect gate="G$1" pin="D23" pad="C15"/>
-<connect gate="G$1" pin="D24" pad="A18"/>
-<connect gate="G$1" pin="D25" pad="C16"/>
-<connect gate="G$1" pin="D26" pad="B18"/>
-<connect gate="G$1" pin="D27" pad="D16"/>
-<connect gate="G$1" pin="D28" pad="C18"/>
-<connect gate="G$1" pin="D29" pad="E16"/>
-<connect gate="G$1" pin="D3" pad="A02"/>
-<connect gate="G$1" pin="D30" pad="E17"/>
-<connect gate="G$1" pin="D31" pad="D18"/>
-<connect gate="G$1" pin="D4" pad="A03"/>
-<connect gate="G$1" pin="D5" pad="A04"/>
-<connect gate="G$1" pin="D6" pad="A05"/>
-<connect gate="G$1" pin="D7" pad="A06"/>
-<connect gate="G$1" pin="D8" pad="B07"/>
-<connect gate="G$1" pin="D9" pad="A07"/>
-<connect gate="G$1" pin="DLE" pad="T09"/>
-<connect gate="G$1" pin="IPEND" pad="S01"/>
-<connect gate="G$1" pin="IPL0" pad="T08"/>
-<connect gate="G$1" pin="IPL1" pad="T07"/>
-<connect gate="G$1" pin="IPL2" pad="T06"/>
-<connect gate="G$1" pin="LOCK" pad="S18"/>
-<connect gate="G$1" pin="LOCKE" pad="R18"/>
-<connect gate="G$1" pin="MDIS" pad="S06"/>
-<connect gate="G$1" pin="MI" pad="Q16"/>
-<connect gate="G$1" pin="PCLK" pad="R09"/>
-<connect gate="G$1" pin="PST0" pad="T15"/>
-<connect gate="G$1" pin="PST1" pad="S14"/>
-<connect gate="G$1" pin="PST2" pad="R14"/>
-<connect gate="G$1" pin="PST3" pad="T16"/>
-<connect gate="G$1" pin="R/!W" pad="N16"/>
-<connect gate="G$1" pin="RSTI" pad="S07"/>
-<connect gate="G$1" pin="RSTO" pad="R03"/>
-<connect gate="G$1" pin="SC0" pad="T12"/>
-<connect gate="G$1" pin="SC1" pad="S12"/>
-<connect gate="G$1" pin="SIZ0" pad="P17"/>
-<connect gate="G$1" pin="SIZ1" pad="P16"/>
-<connect gate="G$1" pin="TA" pad="T14"/>
-<connect gate="G$1" pin="TBI" pad="S11"/>
-<connect gate="G$1" pin="TCI" pad="T10"/>
-<connect gate="G$1" pin="TCK" pad="S04"/>
-<connect gate="G$1" pin="TDI" pad="S03"/>
-<connect gate="G$1" pin="TDO" pad="T02"/>
-<connect gate="G$1" pin="TEA" pad="S13"/>
-<connect gate="G$1" pin="TIP" pad="R15"/>
-<connect gate="G$1" pin="TLN0" pad="Q18"/>
-<connect gate="G$1" pin="TLN1" pad="P18"/>
-<connect gate="G$1" pin="TM0" pad="N18"/>
-<connect gate="G$1" pin="TM1" pad="M18"/>
-<connect gate="G$1" pin="TM2" pad="K17"/>
-<connect gate="G$1" pin="TMS" pad="S05"/>
-<connect gate="G$1" pin="TRST" pad="T03"/>
-<connect gate="G$1" pin="TS" pad="R16"/>
-<connect gate="G$1" pin="TT0" pad="P03"/>
-<connect gate="G$1" pin="TT1" pad="P02"/>
-<connect gate="G$1" pin="UPA0" pad="Q03"/>
-<connect gate="G$1" pin="UPA1" pad="Q01"/>
-<connect gate="P" pin="GND@1" pad="B02"/>
-<connect gate="P" pin="GND@10" pad="C07"/>
-<connect gate="P" pin="GND@11" pad="C09"/>
-<connect gate="P" pin="GND@12" pad="C11"/>
-<connect gate="P" pin="GND@13" pad="C13"/>
-<connect gate="P" pin="GND@14" pad="D02"/>
-<connect gate="P" pin="GND@15" pad="D17"/>
-<connect gate="P" pin="GND@16" pad="F02"/>
-<connect gate="P" pin="GND@17" pad="F17"/>
-<connect gate="P" pin="GND@18" pad="H02"/>
-<connect gate="P" pin="GND@19" pad="H17"/>
-<connect gate="P" pin="GND@2" pad="B04"/>
-<connect gate="P" pin="GND@20" pad="K03"/>
-<connect gate="P" pin="GND@21" pad="K16"/>
-<connect gate="P" pin="GND@22" pad="L02"/>
-<connect gate="P" pin="GND@23" pad="L03"/>
-<connect gate="P" pin="GND@24" pad="L17"/>
-<connect gate="P" pin="GND@25" pad="M16"/>
-<connect gate="P" pin="GND@26" pad="N02"/>
-<connect gate="P" pin="GND@27" pad="N17"/>
-<connect gate="P" pin="GND@28" pad="Q02"/>
-<connect gate="P" pin="GND@29" pad="Q17"/>
-<connect gate="P" pin="GND@3" pad="B06"/>
-<connect gate="P" pin="GND@30" pad="R04"/>
-<connect gate="P" pin="GND@31" pad="R06"/>
-<connect gate="P" pin="GND@32" pad="R10"/>
-<connect gate="P" pin="GND@33" pad="R11"/>
-<connect gate="P" pin="GND@34" pad="R13"/>
-<connect gate="P" pin="GND@35" pad="S02"/>
-<connect gate="P" pin="GND@36" pad="S09"/>
-<connect gate="P" pin="GND@37" pad="S15"/>
-<connect gate="P" pin="GND@38" pad="S17"/>
-<connect gate="P" pin="GND@39" pad="T04"/>
-<connect gate="P" pin="GND@4" pad="B08"/>
-<connect gate="P" pin="GND@5" pad="B10"/>
-<connect gate="P" pin="GND@6" pad="B13"/>
-<connect gate="P" pin="GND@7" pad="B15"/>
-<connect gate="P" pin="GND@8" pad="B17"/>
-<connect gate="P" pin="GND@9" pad="C06"/>
-<connect gate="P" pin="VCC@1" pad="B05"/>
-<connect gate="P" pin="VCC@10" pad="C17"/>
-<connect gate="P" pin="VCC@11" pad="G02"/>
-<connect gate="P" pin="VCC@12" pad="G17"/>
-<connect gate="P" pin="VCC@13" pad="H03"/>
-<connect gate="P" pin="VCC@14" pad="H16"/>
-<connect gate="P" pin="VCC@15" pad="J03"/>
-<connect gate="P" pin="VCC@16" pad="J16"/>
-<connect gate="P" pin="VCC@17" pad="L16"/>
-<connect gate="P" pin="VCC@18" pad="M02"/>
-<connect gate="P" pin="VCC@19" pad="M03"/>
-<connect gate="P" pin="VCC@2" pad="B09"/>
-<connect gate="P" pin="VCC@20" pad="M17"/>
-<connect gate="P" pin="VCC@21" pad="R02"/>
-<connect gate="P" pin="VCC@22" pad="R05"/>
-<connect gate="P" pin="VCC@23" pad="R08"/>
-<connect gate="P" pin="VCC@24" pad="R12"/>
-<connect gate="P" pin="VCC@25" pad="R17"/>
-<connect gate="P" pin="VCC@26" pad="S08"/>
-<connect gate="P" pin="VCC@27" pad="S16"/>
-<connect gate="P" pin="VCC@3" pad="B14"/>
-<connect gate="P" pin="VCC@4" pad="C02"/>
-<connect gate="P" pin="VCC@5" pad="C05"/>
-<connect gate="P" pin="VCC@6" pad="C08"/>
-<connect gate="P" pin="VCC@7" pad="C10"/>
-<connect gate="P" pin="VCC@8" pad="C12"/>
-<connect gate="P" pin="VCC@9" pad="C14"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MOTOROLA" constant="no"/>
-<attribute name="MPN" value="MC68040RC40A" constant="no"/>
-<attribute name="OC_FARNELL" value="1579784" constant="no"/>
-<attribute name="OC_NEWARK" value="24C6756" constant="no"/>
-</technology>
-</technologies>
-</device>
 <device name="PQFP184" package="PQFP184">
 <connects>
 <connect gate="G$1" pin="A0" pad="70"/>
 <connect gate="G$1" pin="A1" pad="71"/>
+<connect gate="G$1" pin="A10" pad="173"/>
+<connect gate="G$1" pin="A11" pad="172"/>
+<connect gate="G$1" pin="A12" pad="170"/>
+<connect gate="G$1" pin="A13" pad="169"/>
+<connect gate="G$1" pin="A14" pad="167"/>
+<connect gate="G$1" pin="A15" pad="166"/>
+<connect gate="G$1" pin="A16" pad="164"/>
+<connect gate="G$1" pin="A17" pad="163"/>
+<connect gate="G$1" pin="A18" pad="160"/>
+<connect gate="G$1" pin="A19" pad="159"/>
 <connect gate="G$1" pin="A2" pad="73"/>
+<connect gate="G$1" pin="A20" pad="157"/>
+<connect gate="G$1" pin="A21" pad="156"/>
+<connect gate="G$1" pin="A22" pad="154"/>
+<connect gate="G$1" pin="A23" pad="153"/>
+<connect gate="G$1" pin="A24" pad="151"/>
+<connect gate="G$1" pin="A25" pad="150"/>
 <connect gate="G$1" pin="A26" pad="148"/>
 <connect gate="G$1" pin="A27" pad="147"/>
 <connect gate="G$1" pin="A28" pad="145"/>
@@ -3321,6 +3152,7 @@ shrink quad flat pack, square</description>
 <connect gate="G$1" pin="BG" pad="36"/>
 <connect gate="G$1" pin="BR" pad="50"/>
 <connect gate="G$1" pin="CDIS" pad="11"/>
+<connect gate="G$1" pin="CIOUT" pad="182"/>
 <connect gate="G$1" pin="D0" pad="138"/>
 <connect gate="G$1" pin="D1" pad="137"/>
 <connect gate="G$1" pin="D10" pad="120"/>
@@ -3353,9 +3185,14 @@ shrink quad flat pack, square</description>
 <connect gate="G$1" pin="D7" pad="126"/>
 <connect gate="G$1" pin="D8" pad="124"/>
 <connect gate="G$1" pin="D9" pad="123"/>
+<connect gate="G$1" pin="IPEND" pad="183"/>
 <connect gate="G$1" pin="IPL0" pad="15"/>
 <connect gate="G$1" pin="IPL1" pad="14"/>
 <connect gate="G$1" pin="IPL2" pad="13"/>
+<connect gate="G$1" pin="JS0" pad="26"/>
+<connect gate="G$1" pin="JS2" pad="23"/>
+<connect gate="G$1" pin="LFO" pad="20"/>
+<connect gate="G$1" pin="LOC" pad="6"/>
 <connect gate="G$1" pin="LOCK" pad="53"/>
 <connect gate="G$1" pin="LOCKE" pad="57"/>
 <connect gate="G$1" pin="MDIS" pad="10"/>
@@ -3369,6 +3206,7 @@ shrink quad flat pack, square</description>
 <connect gate="G$1" pin="RSTO" pad="1"/>
 <connect gate="G$1" pin="SC0" pad="25"/>
 <connect gate="G$1" pin="SC1" pad="35"/>
+<connect gate="G$1" pin="SCD" pad="34"/>
 <connect gate="G$1" pin="SIZ0" pad="60"/>
 <connect gate="G$1" pin="SIZ1" pad="54"/>
 <connect gate="G$1" pin="TA" pad="38"/>
@@ -3386,6 +3224,40 @@ shrink quad flat pack, square</description>
 <connect gate="G$1" pin="TM2" pad="67"/>
 <connect gate="G$1" pin="TMS" pad="7"/>
 <connect gate="G$1" pin="TS" pad="48"/>
+<connect gate="G$1" pin="TT0" pad="177"/>
+<connect gate="G$1" pin="TT1" pad="176"/>
+<connect gate="G$1" pin="UPA0" pad="180"/>
+<connect gate="G$1" pin="UPA1" pad="179"/>
+<connect gate="P" pin="+3V3@1" pad="9"/>
+<connect gate="P" pin="+3V3@10" pad="69"/>
+<connect gate="P" pin="+3V3@11" pad="75"/>
+<connect gate="P" pin="+3V3@12" pad="81"/>
+<connect gate="P" pin="+3V3@13" pad="84"/>
+<connect gate="P" pin="+3V3@15" pad="94"/>
+<connect gate="P" pin="+3V3@16" pad="100"/>
+<connect gate="P" pin="+3V3@17" pad="102"/>
+<connect gate="P" pin="+3V3@18" pad="109"/>
+<connect gate="P" pin="+3V3@19" pad="115"/>
+<connect gate="P" pin="+3V3@2" pad="16"/>
+<connect gate="P" pin="+3V3@20" pad="122"/>
+<connect gate="P" pin="+3V3@21" pad="128"/>
+<connect gate="P" pin="+3V3@22" pad="136"/>
+<connect gate="P" pin="+3V3@23" pad="140"/>
+<connect gate="P" pin="+3V3@24" pad="143"/>
+<connect gate="P" pin="+3V3@25" pad="149"/>
+<connect gate="P" pin="+3V3@26" pad="155"/>
+<connect gate="P" pin="+3V3@27" pad="161"/>
+<connect gate="P" pin="+3V3@28" pad="181"/>
+<connect gate="P" pin="+3V3@29" pad="175"/>
+<connect gate="P" pin="+3V3@3" pad="19"/>
+<connect gate="P" pin="+3V3@30" pad="168"/>
+<connect gate="P" pin="+3V3@4" pad="32"/>
+<connect gate="P" pin="+3V3@5" pad="21"/>
+<connect gate="P" pin="+3V3@6" pad="43"/>
+<connect gate="P" pin="+3V3@7" pad="49"/>
+<connect gate="P" pin="+3V3@8" pad="56"/>
+<connect gate="P" pin="+3V3@9" pad="62"/>
+<connect gate="P" pin="+3V3C@14" pad="88"/>
 <connect gate="P" pin="GND@1" pad="5"/>
 <connect gate="P" pin="GND@10" pad="46"/>
 <connect gate="P" pin="GND@11" pad="52"/>
@@ -3412,37 +3284,20 @@ shrink quad flat pack, square</description>
 <connect gate="P" pin="GND@30" pad="135"/>
 <connect gate="P" pin="GND@31" pad="139"/>
 <connect gate="P" pin="GND@32" pad="146"/>
+<connect gate="P" pin="GND@33" pad="152"/>
+<connect gate="P" pin="GND@34" pad="158"/>
+<connect gate="P" pin="GND@35" pad="165"/>
+<connect gate="P" pin="GND@36" pad="171"/>
+<connect gate="P" pin="GND@37" pad="174"/>
+<connect gate="P" pin="GND@38" pad="184"/>
+<connect gate="P" pin="GND@39" pad="162"/>
 <connect gate="P" pin="GND@4" pad="22"/>
+<connect gate="P" pin="GND@40" pad="178"/>
 <connect gate="P" pin="GND@5" pad="24"/>
 <connect gate="P" pin="GND@6" pad="27"/>
 <connect gate="P" pin="GND@7" pad="28"/>
 <connect gate="P" pin="GND@8" pad="33"/>
 <connect gate="P" pin="GND@9" pad="40"/>
-<connect gate="P" pin="VCC@1" pad="9"/>
-<connect gate="P" pin="VCC@10" pad="69"/>
-<connect gate="P" pin="VCC@11" pad="75"/>
-<connect gate="P" pin="VCC@12" pad="81"/>
-<connect gate="P" pin="VCC@13" pad="84"/>
-<connect gate="P" pin="VCC@14" pad="88"/>
-<connect gate="P" pin="VCC@15" pad="94"/>
-<connect gate="P" pin="VCC@16" pad="100"/>
-<connect gate="P" pin="VCC@17" pad="102"/>
-<connect gate="P" pin="VCC@18" pad="109"/>
-<connect gate="P" pin="VCC@19" pad="115"/>
-<connect gate="P" pin="VCC@2" pad="16"/>
-<connect gate="P" pin="VCC@20" pad="122"/>
-<connect gate="P" pin="VCC@21" pad="128"/>
-<connect gate="P" pin="VCC@22" pad="136"/>
-<connect gate="P" pin="VCC@23" pad="140"/>
-<connect gate="P" pin="VCC@24" pad="143"/>
-<connect gate="P" pin="VCC@25" pad="149"/>
-<connect gate="P" pin="VCC@3" pad="19"/>
-<connect gate="P" pin="VCC@4" pad="32"/>
-<connect gate="P" pin="VCC@5" pad="21"/>
-<connect gate="P" pin="VCC@6" pad="43"/>
-<connect gate="P" pin="VCC@7" pad="49"/>
-<connect gate="P" pin="VCC@8" pad="56"/>
-<connect gate="P" pin="VCC@9" pad="62"/>
 </connects>
 <technologies>
 <technology name=""/>
