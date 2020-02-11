@@ -10372,6 +10372,40 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 </symbol>
+<symbol name="IMSG176">
+<pin name="GREEN" x="10.16" y="10.16" length="middle" rot="R180"/>
+<pin name="BLUE" x="10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="RED" x="10.16" y="15.24" length="middle" rot="R180"/>
+<pin name="P0" x="-20.32" y="-2.54" length="middle" direction="in"/>
+<pin name="P1" x="-20.32" y="0" length="middle" direction="in"/>
+<pin name="P2" x="-20.32" y="2.54" length="middle" direction="in"/>
+<pin name="P3" x="-20.32" y="5.08" length="middle" direction="in"/>
+<pin name="P4" x="-20.32" y="7.62" length="middle" direction="in"/>
+<pin name="P5" x="-20.32" y="10.16" length="middle" direction="in"/>
+<pin name="P6" x="-20.32" y="12.7" length="middle" direction="in"/>
+<pin name="P7" x="-20.32" y="15.24" length="middle" direction="in"/>
+<pin name="D0" x="-20.32" y="-25.4" length="middle" direction="out"/>
+<pin name="D1" x="-20.32" y="-22.86" length="middle" direction="out"/>
+<pin name="D2" x="-20.32" y="-20.32" length="middle" direction="out"/>
+<pin name="D3" x="-20.32" y="-17.78" length="middle" direction="out"/>
+<pin name="D4" x="-20.32" y="-15.24" length="middle" direction="out"/>
+<pin name="D5" x="-20.32" y="-12.7" length="middle" direction="out"/>
+<pin name="D6" x="-20.32" y="-10.16" length="middle" direction="out"/>
+<pin name="D7" x="-20.32" y="-7.62" length="middle" direction="out"/>
+<pin name="PCLK" x="-20.32" y="22.86" length="middle" direction="in" function="clk"/>
+<pin name="!BLANK" x="-20.32" y="20.32" length="middle"/>
+<pin name="!WR" x="-20.32" y="-30.48" length="middle"/>
+<pin name="RS0" x="-20.32" y="-35.56" length="middle"/>
+<pin name="!RD" x="-20.32" y="-33.02" length="middle"/>
+<pin name="RS1" x="-20.32" y="-38.1" length="middle"/>
+<pin name="!IREF" x="10.16" y="0" length="middle" rot="R180"/>
+<pin name="VDD" x="10.16" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND" x="10.16" y="-35.56" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="25.4" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-40.64" x2="5.08" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-40.64" x2="5.08" y2="25.4" width="0.254" layer="94"/>
+<wire x1="5.08" y1="25.4" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SPI65B">
@@ -13131,6 +13165,48 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/DOC0364.PDF</descripti
 </connects>
 <technologies>
 <technology name="ABT"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IMSG176">
+<gates>
+<gate name="G$1" symbol="IMSG176" x="5.08" y="7.62"/>
+</gates>
+<devices>
+<device name="DIL" package="DIL28-6">
+<connects>
+<connect gate="G$1" pin="!BLANK" pad="16"/>
+<connect gate="G$1" pin="!IREF" pad="4"/>
+<connect gate="G$1" pin="!RD" pad="15"/>
+<connect gate="G$1" pin="!WR" pad="25"/>
+<connect gate="G$1" pin="BLUE" pad="3"/>
+<connect gate="G$1" pin="D0" pad="17"/>
+<connect gate="G$1" pin="D1" pad="18"/>
+<connect gate="G$1" pin="D2" pad="19"/>
+<connect gate="G$1" pin="D3" pad="20"/>
+<connect gate="G$1" pin="D4" pad="21"/>
+<connect gate="G$1" pin="D5" pad="22"/>
+<connect gate="G$1" pin="D6" pad="23"/>
+<connect gate="G$1" pin="D7" pad="24"/>
+<connect gate="G$1" pin="GND" pad="14"/>
+<connect gate="G$1" pin="GREEN" pad="2"/>
+<connect gate="G$1" pin="P0" pad="5"/>
+<connect gate="G$1" pin="P1" pad="6"/>
+<connect gate="G$1" pin="P2" pad="7"/>
+<connect gate="G$1" pin="P3" pad="8"/>
+<connect gate="G$1" pin="P4" pad="9"/>
+<connect gate="G$1" pin="P5" pad="10"/>
+<connect gate="G$1" pin="P6" pad="11"/>
+<connect gate="G$1" pin="P7" pad="12"/>
+<connect gate="G$1" pin="PCLK" pad="13"/>
+<connect gate="G$1" pin="RED" pad="1"/>
+<connect gate="G$1" pin="RS0" pad="26"/>
+<connect gate="G$1" pin="RS1" pad="27"/>
+<connect gate="G$1" pin="VDD" pad="28"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
