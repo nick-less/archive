@@ -3,7 +3,7 @@ EPAC 68008
 
 Interrupt and Decoder GAL
 
-'''wavedrom
+```wavedrom
 {signal: [
   {name: 'clk', wave: 'p.....|...'},
   {name: 'dat', wave: 'x.345x|=.x', data: ['head', 'body', 'tail', 'data']},
@@ -12,5 +12,4 @@ Interrupt and Decoder GAL
   {name: 'ack', wave: '1.....|01.'}
 ]}
 
-
-'''
+```
