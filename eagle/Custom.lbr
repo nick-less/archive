@@ -9473,6 +9473,8 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <rectangle x1="4.191" y1="-5.334" x2="4.699" y2="-3.8608" layer="51"/>
 <rectangle x1="5.461" y1="-5.334" x2="5.969" y2="-3.8608" layer="51"/>
 </package>
+<package name="MC3346">
+</package>
 </packages>
 <symbols>
 <symbol name="SPI65B">
@@ -12685,6 +12687,28 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pin name="Y3" x="12.7" y="0" length="middle" direction="hiz" rot="R180"/>
 <pin name="Y2" x="12.7" y="2.54" length="middle" direction="hiz" rot="R180"/>
 <pin name="Y1" x="12.7" y="5.08" length="middle" direction="hiz" rot="R180"/>
+</symbol>
+<symbol name="MC3446">
+<pin name="1B" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="1D" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="2B" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="2D" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="3B" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="3D" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="4B" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="4D" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="1R" x="17.78" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="2R" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="3R" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="4R" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="17.78" y="17.78" length="middle" direction="sup" rot="R180"/>
+<pin name="GND" x="17.78" y="-10.16" length="middle" direction="sup" rot="R180"/>
+<wire x1="-7.62" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
+<pin name="123S" x="-12.7" y="20.32" length="middle"/>
+<pin name="4S" x="-12.7" y="-12.7" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16329,6 +16353,36 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/DOC0364.PDF</descripti
 <connect gate="B" pin="Y4" pad="3"/>
 <connect gate="P" pin="GND" pad="10"/>
 <connect gate="P" pin="VCC" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC3446">
+<gates>
+<gate name="G$1" symbol="MC3446" x="-5.08" y="0"/>
+</gates>
+<devices>
+<device name="DIL16" package="DIL16">
+<connects>
+<connect gate="G$1" pin="123S" pad="4"/>
+<connect gate="G$1" pin="1B" pad="2"/>
+<connect gate="G$1" pin="1D" pad="3"/>
+<connect gate="G$1" pin="1R" pad="1"/>
+<connect gate="G$1" pin="2B" pad="6"/>
+<connect gate="G$1" pin="2D" pad="5"/>
+<connect gate="G$1" pin="2R" pad="7"/>
+<connect gate="G$1" pin="3B" pad="10"/>
+<connect gate="G$1" pin="3D" pad="11"/>
+<connect gate="G$1" pin="3R" pad="9"/>
+<connect gate="G$1" pin="4B" pad="14"/>
+<connect gate="G$1" pin="4D" pad="13"/>
+<connect gate="G$1" pin="4R" pad="15"/>
+<connect gate="G$1" pin="4S" pad="12"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
